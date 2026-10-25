@@ -259,8 +259,8 @@ a:hover{ text-decoration: underline; }
 /* ---------- Skills ---------- */
 .skill-grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 32px 28px;
   margin-bottom: 40px;
 }
 .skill-group h3{ font-size: 17px; margin-bottom: 10px; }
