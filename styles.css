@@ -312,6 +312,7 @@ section[id]{ scroll-margin-top: 64px; }
 
 .chip{
   display: inline-block;
+  white-space: nowrap;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.4;
@@ -544,7 +545,7 @@ section[id]{ scroll-margin-top: 64px; }
   .hero h1 br{ display: none; }
   .hero-sub{ font-size: 17px; }
   .mockup{ margin-top: 48px; margin-bottom: -72px; }
-  .mockup-row{ grid-template-columns: 96px 1fr; gap: 12px; padding: 11px 14px; font-size: 13px; }
+  .mockup-row{ grid-template-columns: 116px 1fr; gap: 10px; padding: 11px 14px; font-size: 13px; }
   .mockup-bar{ padding-left: 14px; padding-right: 14px; }
   .section{ padding: 56px 0; }
   .section-after-mockup{ padding-top: 128px; padding-bottom: 16px; }
