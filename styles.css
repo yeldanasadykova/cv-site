@@ -186,7 +186,7 @@ section[id]{ scroll-margin-top: 64px; }
   position: relative;
   background: var(--navy);
   color: #fff;
-  padding: 96px 0 0;
+  padding: 96px 0 96px;
   text-align: center;
 }
 .hero-inner{ position: relative; z-index: 1; }
@@ -254,81 +254,8 @@ section[id]{ scroll-margin-top: 64px; }
 .d5{ top: 54%; left: 4%;  width: 14px; height: 14px; background: #dd5b00; transform: rotate(18deg); }
 .d6{ top: 58%; right: 11%; width: 14px; height: 14px; background: #d6b6f6; transform: rotate(-16deg); }
 
-/* ---------- Hero mockup card ---------- */
-.mockup{
-  position: relative;
-  z-index: 2;
-  max-width: 880px;
-  margin: 64px auto -96px;
-  background: var(--canvas);
-  color: var(--ink);
-  text-align: left;
-  border: 1px solid var(--hairline);
-  border-radius: var(--r-lg);
-  box-shadow: 0 24px 48px -8px rgba(15,15,15,0.2);
-  overflow: hidden;
-}
-.mockup-bar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 20px 0;
-  border-bottom: 1px solid var(--hairline);
-}
-.mockup-title{
-  font-size: 14px;
-  font-weight: 600;
-  padding-bottom: 12px;
-}
-.mockup-tabs{ display: flex; gap: 4px; }
-.mockup-tab{
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--steel);
-  padding: 4px 12px 11px;
-  border-bottom: 2px solid transparent;
-  margin-bottom: -1px;
-}
-.mockup-tab.is-active{ color: var(--ink); border-bottom-color: var(--ink); }
-
-.mockup-row{
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  align-items: center;
-  gap: 16px;
-  padding: 13px 20px;
-  font-size: 14px;
-  border-bottom: 1px solid var(--hairline-soft);
-}
-.mockup-row:last-child{ border-bottom: none; }
-.mockup-head{
-  background: var(--surface-soft);
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--steel);
-  padding-top: 9px;
-  padding-bottom: 9px;
-}
-
-.chip{
-  display: inline-block;
-  white-space: nowrap;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 1.4;
-  padding: 2px 8px;
-  border-radius: var(--r-sm);
-}
-.chip-lavender{ background: var(--tint-lavender); color: #391c57; }
-.chip-sky{      background: var(--tint-sky);      color: #0b4a82; }
-.chip-peach{    background: var(--tint-peach);    color: #793400; }
-.chip-mint{     background: var(--tint-mint);     color: #0f6b24; }
-.chip-rose{     background: var(--tint-rose);     color: #a02e6d; }
-.chip-yellow{   background: var(--tint-yellow);   color: #523410; }
-
 /* ---------- Sections ---------- */
 .section{ padding: 80px 0; }
-.section-after-mockup{ padding-top: 176px; padding-bottom: 24px; }
 .section-surface{ background: var(--surface); }
 .section-tight{ padding: 80px 0 0; }
 
@@ -521,7 +448,7 @@ section[id]{ scroll-margin-top: 64px; }
   .main-nav a:hover{ background: transparent; }
   .nav-toggle{ display: flex; }
 
-  .hero{ padding-top: 72px; }
+  .hero{ padding-top: 72px; padding-bottom: 80px; }
   .skill-grid{ grid-template-columns: repeat(2, 1fr); }
   .tint-card,
   .tint-card:nth-child(n+4){ grid-column: span 1; }
@@ -541,14 +468,10 @@ section[id]{ scroll-margin-top: 64px; }
   .header-cta{ display: none; }
   .nav-toggle{ margin-left: auto; }
 
-  .hero{ padding-top: 56px; }
+  .hero{ padding-top: 56px; padding-bottom: 64px; }
   .hero h1 br{ display: none; }
   .hero-sub{ font-size: 17px; }
-  .mockup{ margin-top: 48px; margin-bottom: -72px; }
-  .mockup-row{ grid-template-columns: 116px 1fr; gap: 10px; padding: 11px 14px; font-size: 13px; }
-  .mockup-bar{ padding-left: 14px; padding-right: 14px; }
   .section{ padding: 56px 0; }
-  .section-after-mockup{ padding-top: 128px; padding-bottom: 16px; }
   .section-tight{ padding: 56px 0 0; }
 
   .card,
